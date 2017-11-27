@@ -1,0 +1,11 @@
+<div *ngIf="isVisible">
+  <div [ngStyle]="{'position':'absolute','top':settings.bottom + 'px','left':settings.left + 'px','width':settings.width +'px'}">
+    <div class="auto-complete">
+      <ul>
+        <li (click)="itemSelected($event,item);" *ngFor="let item of (data |myfilterString:property:configuration);let i=index">
+          <span>{{item[configuration.condition]}}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

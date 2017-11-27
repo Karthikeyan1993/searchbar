@@ -1,0 +1,25 @@
+.auto-complete {
+  color: #949ba2;
+  background-color: rgba(68, 70, 79, 0.5);
+  border-radius: 5px;
+}
+
+.auto-complete ul {
+  padding: 5px 0px 5px 0px;
+}
+
+.auto-complete ul li {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.auto-complete ul li span {
+  padding: 5px;
+}
+
+.auto-complete ul li:hover {
+  color: #fff;
+  background-color: #2f323b;
+  cursor: pointer;
+}
