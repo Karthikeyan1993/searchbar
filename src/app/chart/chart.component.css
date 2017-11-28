@@ -1,0 +1,27 @@
+.btn-group-exchange {
+  font-size: 12px;
+  padding: 5px;
+}
+
+.btn-flat {
+  border-radius: 0px;
+  color: #949ba2;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.btn-flat:hover {
+  color: #fff;
+}
+
+.btn-flat:focus,
+.btn-flat:active {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.btn-accent {
+  color: #fff;
+  background-color: rgba(240, 185, 22, 0.14);
+  border-color: #f6a821;
+}

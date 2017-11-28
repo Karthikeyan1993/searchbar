@@ -31,7 +31,7 @@
       </div>
     </div>
   </div>
-
+  <app-chart></app-chart>
   <app-complete *ngIf="scripcode" [settings]="domRect" [configuration]="{condition:'scripcode'}" (onItemPicked)="doSomething($event)"
     [property]="scripcode"></app-complete>
   <app-complete *ngIf="strikePrice" [settings]="domRectTwo" [configuration]="{condition:'open'}" (onItemPicked)="doSomething($event)"

@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-sm-3">
+    <div class="btn-group">
+      <a (click)="activateItem(i,item)" [ngClass]="{'btn-accent':isActive==i}" class="btn btn-default btn-group-exchange btn-flat"
+        *ngFor="let item of rangeSelectors;let i=index">{{item}}</a>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6">
+    <chart type="StockChart" (load)="saveInstance($event.context)" [options]="options" style="display: block;width:100%!important;height: 300px !important">
+      <xAxis (afterSetExtremes)="onAfterSetExtremesX($event)"></xAxis>
+      <yAxis (afterSetExtremes)="onAfterSetExtremesY($event)"></yAxis>
+    </chart>
+  </div>
+</div>
